@@ -2,10 +2,18 @@
   "name": "img-processing-api",
   "version": "1.0.0",
   "description": "An Image Processing API",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "format": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "lint": "eslint . --ext .js"
   },
   "author": "Mahmoud Ahmed",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
 }
