@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "An Image Processing API",
   "main": "index.ts",
+  "type":"module",
   "scripts": {
     "build": "npx tsc",
-    "test": "jasmine",
+    "test": "npx jasmine",
     "format": "prettier --config .prettierrc 'src/**/*.js' --write",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .ts"
   },
   "author": "Mahmoud Ahmed",
   "license": "ISC",
@@ -16,8 +17,13 @@
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
     "prettier": "^2.5.1",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/jasmine": "^3.10.3"
   }
 }
