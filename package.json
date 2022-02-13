@@ -1,0 +1,11 @@
+{
+  "name": "img-processing-api",
+  "version": "1.0.0",
+  "description": "An Image Processing API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Mahmoud Ahmed",
+  "license": "ISC"
+}
