@@ -15,6 +15,12 @@ A simple API for resizing images, saving them on disk and serving them on the br
 * Start the server by typing the command
       $ npm run start
 
+* Endpoint for resizing images
+      GET /api/images?filename=FILENAME -> Will render your image as is without any modification.
+
+      GET/api/images?filename=FILENAME&width=WIDTH&height=HEIGHT -> will render the resized image. You should replace FILENAME, WIDTH, HEIGHT with your specific needs.
+
+## How to run the tests
 * Run your tests by typing the command.
 NOTE: The tests won't pass until you start the server.
       $ npm run test
