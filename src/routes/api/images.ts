@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import { resizeImage, imageMetadata } from '../../utilities/imageProcessor';
+import { resizeImage } from '../../utilities/imageProcessor';
 import {
   fileExistInFull,
   fileExistInThumb
