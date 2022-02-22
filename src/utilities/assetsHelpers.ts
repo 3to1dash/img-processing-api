@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs/promises';
 
-async function fileExistInFull(filename: string) {
+async function fileExistInFull(filename: string): Promise<boolean> {
   let exist = false;
 
   const assetsFullDir = path.resolve(`assets/full/`);
@@ -15,7 +15,7 @@ async function fileExistInThumb(
   filename: string,
   width: number,
   height: number
-) {
+): Promise<boolean> {
   let exist = false;
 
   const assetsThumbDir = path.resolve(`assets/thumb/`);
